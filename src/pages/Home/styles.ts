@@ -11,4 +11,6 @@ export const Message = styled.Text`
   margin-top: 20px;
   margin-left: 20px;
 `
-export const Livros = styled.View``
+export const Livros = styled.View`
+ 
+`

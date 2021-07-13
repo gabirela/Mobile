@@ -1,5 +1,5 @@
 import styled from 'styled-components/native'
-import colors from '../../styles/colors'
+import colors from '../../styles/Colors'
 
 export const ButtonStyle = styled.TouchableOpacity`
   background-color: ${colors.brownLight};

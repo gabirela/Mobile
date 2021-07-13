@@ -10,17 +10,17 @@ import data from "../../services/data";
 export default function Home() {
     const navigation = useNavigation();
     function handleBooks(item: BooksProps) {
-        navigation.navigate("Book", { ...item});
+        navigation.navigate("Books", { ...item});
     }
 
     return(
         <Container>
             <Header
-            hello='Olá'
+            hello='Olá,'
             name='Gabriela'
             image={require("../../../assets/img/FotoPerfil.png")}
             />
-            <Message>Seus Livros</Message>
+            <Message>Seus Livros:</Message>
             <Livros>
                 <FlatList
                 data={data}

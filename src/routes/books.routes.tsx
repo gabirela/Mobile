@@ -8,7 +8,7 @@ export default function BookRoute() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Livros" component={Books} />
+      <Stack.Screen name="Books" component={Books} />
     </Stack.Navigator>
   );
 }

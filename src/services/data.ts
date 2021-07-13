@@ -3,13 +3,22 @@ export default [
       id: 1,
       title: "Corte de Espinhos e Rosas",
       image: require("../../assets/img/acotar.png"),
-      status: "Lido"
+      status: "Lido",
+      notas: [{
+        id: 1,
+        conteudo: "Ótimo livro."
+      }]
+      
     },
     {
       id: 2,
       title: "TOG- Herdeira do fogo",
       image: require("../../assets/img/TOG3.png"),
-      status: "Lendo"
+      status: "Lendo",
+      notas: [{
+        id: 1,
+        conteudo: "PERFEITO."
+      }]
     },
   ]
 /*PERGUNTAR PARA O LÁZARO,

@@ -22,7 +22,7 @@ export default function Login() {
     return (
       <Container>
         <Form>
-          <Title> Readind App</Title>
+          <Title> Reading App</Title>
           <FormRow>
             <Label>E-mail</Label>
             <TextInput placeholder="e-mail"></TextInput>

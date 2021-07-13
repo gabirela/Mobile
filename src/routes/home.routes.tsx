@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import BookStack from "./books.routes";
-import colors from "../styles/colors";
+import colors from "../styles/Colors";
 
 const Tab = createBottomTabNavigator();
 
