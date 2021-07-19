@@ -5,11 +5,11 @@ import { //PRECISA FAZER ESSA PARTE NO LOGIN
     FormRow,
     Label,
     TextInput,
-    Title,
     Form,
 } from '../styles/Login'
 
 import {Button, ButtonText} from "../components";
+import Logo from '../components/Logo';
 
 export default function Login() {
     const navigation = useNavigation();
@@ -22,7 +22,9 @@ export default function Login() {
     return (
       <Container>
         <Form>
-          <Title> Reading App</Title>
+          <Logo
+          image={require("../../assets/img/logoApp.png")} 
+          />
           <FormRow>
             <Label>E-mail</Label>
             <TextInput placeholder="e-mail"></TextInput>

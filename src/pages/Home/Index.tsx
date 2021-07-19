@@ -28,11 +28,11 @@ export default function Home() {
                     <ButtonBooks
                     key={item.id}
                     title={item.title}
-                    onPress={() => handleBooks(item)}
                     image={item.image}
+                    onPress={() => handleBooks(item)}
                     />
                 )}
-                numColumns={2}
+                numColumns={1}
                /> 
             </Livros>
         </Container>

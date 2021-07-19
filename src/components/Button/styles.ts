@@ -13,7 +13,7 @@ const sizeVariations = {
 }
 
 export const ButtonStyle = styled.TouchableOpacity<ButtonStyleProps>`
-  background-color: ${colors.brown};
+  background-color: ${colors.pink};
   border-radius: 5px;
   margin-top: 10px;
   ${(props) => sizeVariations[props.size || "default"]};

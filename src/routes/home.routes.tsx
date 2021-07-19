@@ -10,8 +10,8 @@ export default function HomeRoute() {
   return (
     <Tab.Navigator
       tabBarOptions={{
-        activeBackgroundColor: colors.brown,
-        inactiveBackgroundColor: colors.brownLight,
+        activeBackgroundColor: colors.pink,
+        inactiveBackgroundColor: colors.pink,
         activeTintColor: colors.white,
       }}
     >
@@ -21,7 +21,7 @@ export default function HomeRoute() {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: () => (
-            <FontAwesome5 name="book" size={24} color={colors.white} />
+            <FontAwesome5 name="book" size={20} color={colors.white} />
           ),
         }}
       />

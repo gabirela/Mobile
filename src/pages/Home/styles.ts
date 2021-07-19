@@ -3,7 +3,7 @@ import { StatusBar } from 'react-native'
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  /* margin-top: ${StatusBar.currentHeight}px; */
+  margin-top: ${StatusBar.currentHeight}px; 
   margin-bottom: 110px;
 `
 export const Message = styled.Text`
@@ -12,5 +12,6 @@ export const Message = styled.Text`
   margin-left: 20px;
 `
 export const Livros = styled.View`
+  width: 100%;
  
 `

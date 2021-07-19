@@ -23,4 +23,4 @@ export default [
   ]
 /*PERGUNTAR PARA O LÁZARO,
 PORQUE NÃO CONSIGO ADCIONAR
-AS "NOTAS"*/
+AS "NOTAS" - consegui assim */

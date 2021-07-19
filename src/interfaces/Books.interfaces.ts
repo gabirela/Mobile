@@ -12,11 +12,11 @@ export interface BooksProps{
     }[]
 }
 
-export interface BooksProps extends ButtonProps {
-    buttonEdit: () => void
-    buttonRemove: (item: BooksProps) => void
+/*export interface BooksProps extends ButtonProps {
+    buttonEdit?: () => void
+    buttonRemove?: (item: BooksProps) => void
     notas: {
       id: number
       conteudo: string
     }[]
-  }
+  }*/

@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonProps } from "../../interfaces/Button.interface";
 import { ButtonStyle, ButtonStyleText, ImageStyle } from "./style";
 
-export default function ButtonAnimal({
+export default function ButtonBooks({
   title,
   image,
   onPress,
@@ -10,6 +10,7 @@ export default function ButtonAnimal({
 }: ButtonProps) {
   return (
     <ButtonStyle onPress={onPress} {...rest}>
+      {image && <ImageStyle source={image}/>}
       <ButtonStyleText>{title}</ButtonStyleText>
     </ButtonStyle>
   );

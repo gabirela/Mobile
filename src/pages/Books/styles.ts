@@ -4,7 +4,9 @@ import { StatusBar } from 'react-native'
 
 //const Container é um container rs 
 export const Container = styled.SafeAreaView`
-  /* margin-top: ${StatusBar.currentHeight}px; */
+  margin-top: ${StatusBar.currentHeight}px; 
+  height: 7%;
+  
 `
 
 // Message é a formatação de uma mensagem
@@ -15,4 +17,5 @@ export const Message = styled.Text`
 `
 
 //Mostra os livros 
-export const Livros = styled.View``
+export const Livros = styled.View`
+`
