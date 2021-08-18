@@ -10,36 +10,36 @@ import data from "../../services/data";
 export default function Home() {
     const navigation = useNavigation();
     function handleBooks(item: BooksProps) {
-        navigation.navigate("Books", { ...item});
+        navigation.navigate("Books", { ...item });
     }
     function handlePerfilStack() {
         navigation.navigate("Perfil");
     }
 
 
-    return(
+    return (
         <Container>
             <Header
-            hello='Olá,'
-            name='Gabriela'
-            image={require("../../../assets/img/FotoPerfil.png")}
+                hello='Olá,'
+                name='Gabriela'
+                image={require("../../../assets/img/FotoPerfil.png")}
             />
             <Message>Seus Livros:</Message>
             <Livros>
                 <FlatList
-                data={data}
-                renderItem={({ item }) =>(
-                    <ButtonBooks
-                    key={item.id}
-                    title={item.title}
-                    image={item.image}
-                    onPress={() => handleBooks(item)}
-                    />
-                )}
-                numColumns={1}
-               /> 
+                    data={data}
+                    renderItem={({ item }) => (
+                        <ButtonBooks
+                            key={item.id}
+                            title={item.title}
+                            image={item.image}
+                            onPress={() => handleBooks(item)}
+                        />
+                    )}
+                    keyExtractor={item => String(item.id)}
+                />
             </Livros>
-            <ButtonText title="Editar Perfil" onPress={handlePerfilStack} />
+            <ButtonText title="🙂Editar Perfil" onPress={handlePerfilStack} />
         </Container>
     );
 }

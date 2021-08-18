@@ -5,10 +5,11 @@ import { Alert } from "react-native";
 import { Container, Message, Livros } from "./styles";
 import { Header, Livro } from "../../components";
 import { BooksProps } from "../../interfaces/Books.interfaces";
+import { LivroProps } from "../../interfaces/Livro.interfaces";
 
 export default function Books() {
   const route = useRoute();
-  const { title, image} =
+  const { id, title, image, status, notas } =
     route.params as BooksProps;
   const navigation = useNavigation();
   function StatusEdit() {
@@ -16,11 +17,20 @@ export default function Books() {
   }
   return (
     <Container>
-      <Header 
-      name={title}
-      image={image} />
-      
+      <Header
+        hello='Olá,'
+        name='Gabriela'
+        image={require("../../../assets/img/FotoPerfil.png")}
+      />
+      <Livro
+        id={id}
+        title={title}
+        image={image}
+        status={status}
+        notas={notas} />
+
+
     </Container>
   );
 }
- 
+

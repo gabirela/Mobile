@@ -1,15 +1,15 @@
 import { ImageSourcePropType } from "react-native";
 import { ButtonProps } from "./Button.interface"
 
-export interface BooksProps{
+export interface BooksProps {
+  id: number
+  title: string
+  image: ImageSourcePropType
+  status: string
+  notas: {
     id: number
-    title: string
-    image: ImageSourcePropType
-    status: string
-    notas: {
-        id: number
-        conteudo: string
-    }[]
+    conteudo: string
+  }
 }
 
 /*export interface BooksProps extends ButtonProps {

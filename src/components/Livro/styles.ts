@@ -1,16 +1,16 @@
 import styled from 'styled-components/native'
 
-export const Livro = styled.View`
-  align items: center;
-`
+
+
 export const LivroStyle = styled.View`
-  flex-direction: row;
+  margin:20px;
 `
 export const LivroTitle = styled.View`
-  width: 50%;
+  width:60%;
   margin-top:10px;
   margin-left: 20px;
   justify-content: center;
+  color: black;
 `
 export const LivroImage = styled.View`
   margin-top:10px;
@@ -23,16 +23,19 @@ export const LivroImage = styled.View`
 export const LivroName = styled.Text`
   font-size: 24px;
   font-weight: bold;
+  color: black;
 `
-export const LivroStatus = styled.View`
-  width: 50%;
+export const LivroStatus = styled.Text`
+
   margin-top:10px;
   margin-left: 20px;
   justify-content: center;
+  color:black;
 `
-export const LivroNotas = styled.View`
-  width: 50%;
+export const LivroNotas = styled.Text`
+
   margin-top:10px;
   margin-left: 20px;
   justify-content: center;
+  color:black;
 `

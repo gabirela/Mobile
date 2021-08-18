@@ -2,9 +2,9 @@ import { ImageSourcePropType } from 'react-native'
 
 export interface LivroProps {
   name: string
-  image: ImageSourcePropType
+  images: ImageSourcePropType
   status: string
- /* notas:{
-      conteudo: string
-  }*/
+  notas: {
+    conteudo: string
+  }
 }

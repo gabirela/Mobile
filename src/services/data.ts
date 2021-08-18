@@ -4,10 +4,10 @@ export default [
       title: "Corte de Espinhos e Rosas",
       image: require("../../assets/img/acotar.png"),
       status: "Lido",
-      notas: [{
+      notas: {
         id: 1,
         conteudo: "Ótimo livro."
-      }]
+      }
       
     },
     {
@@ -15,10 +15,10 @@ export default [
       title: "TOG- Herdeira do fogo",
       image: require("../../assets/img/TOG3.png"),
       status: "Lendo",
-      notas: [{
+      notas: {
         id: 1,
         conteudo: "PERFEITO."
-      }]
+      }
     },
   ]
 /*PERGUNTAR PARA O LÁZARO,
