@@ -15,7 +15,7 @@ export default function Header({ hello, name, image }: HeaderProps) {
     <HeaderStyle>
       <HeaderTitle>
         {hello && <HeaderHello>{hello}</HeaderHello>}
-        <HeaderName>{name }</HeaderName>
+        <HeaderName>{name}</HeaderName>
       </HeaderTitle>
       <HeaderImage>
         <Image source={image} />

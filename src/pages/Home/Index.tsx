@@ -2,8 +2,8 @@ import React from "react";
 import { FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/core";
 import { BooksProps } from "../../interfaces/Books.interfaces";
-import { Header, ButtonBooks } from "../../components";
-import { Container, Message, Livros } from "./styles";
+import { Header, ButtonBooks, ButtonText } from "../../components";
+import { Container, Message, Livros, Links } from "./styles";
 import data from "../../services/data";
 
 
@@ -12,6 +12,10 @@ export default function Home() {
     function handleBooks(item: BooksProps) {
         navigation.navigate("Books", { ...item});
     }
+    function handlePerfilStack() {
+        navigation.navigate("Perfil");
+    }
+
 
     return(
         <Container>
@@ -35,6 +39,7 @@ export default function Home() {
                 numColumns={1}
                /> 
             </Livros>
+            <ButtonText title="Editar Perfil" onPress={handlePerfilStack} />
         </Container>
     );
 }

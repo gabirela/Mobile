@@ -15,3 +15,8 @@ export const Livros = styled.View`
   width: 100%;
  
 `
+export const Links =  styled.Button`
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 20px;
+`

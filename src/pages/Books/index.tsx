@@ -19,34 +19,8 @@ export default function Books() {
       <Header 
       name={title}
       image={image} />
+      
     </Container>
   );
 }
-
-
- /* const BooksRemoveAlert = () =>
-    Alert.alert(
-      "Remoção",
-      "Tem certeza que deseja remover este livro?",
-      [
-        {
-          text: "Cancel",
-          onPress: () => console.log("Cancel Pressed"),
-        },
-        { text: "OK", onPress: () => console.log(id, ) },
-      ],
-      { cancelable: false }
-    );
-  /*const vacinaRemoveAlert = (item: VacinaParamProps) =>
-    Alert.alert(
-      "Remoção",
-      "Tem certeza que deseja remover a vacina cadastrada?",
-      [
-        {
-          text: "Cancel",
-          onPress: () => console.log("Cancel Pressed"),
-        },
-        { text: "OK", onPress: () => console.log(item) },
-      ],
-      { cancelable: false }
-    );*/
+ 
