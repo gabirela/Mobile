@@ -11,9 +11,9 @@ export default function Books() {
   const { id, title, image, status, notas } =
     route.params as BooksProps;
   const navigation = useNavigation();
-  function StatusEdit() {
+  /*function StatusEdit() {
     navigation.navigate("Login");
-  }
+  }*/
   function handleEditarLivroStack() {
     navigation.navigate("EditarLivro");
   }
