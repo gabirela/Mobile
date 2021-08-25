@@ -3,9 +3,8 @@ import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/core";
 import { Alert } from "react-native";
 import { Container, Message, Livros } from "./styles";
-import { Header, Livro } from "../../components";
+import { ButtonTextInicial, Header, Livro } from "../../components";
 import { BooksProps } from "../../interfaces/Books.interfaces";
-import { LivroProps } from "../../interfaces/Livro.interfaces";
 
 export default function Books() {
   const route = useRoute();
@@ -14,6 +13,9 @@ export default function Books() {
   const navigation = useNavigation();
   function StatusEdit() {
     navigation.navigate("Login");
+  }
+  function handleEditarLivroStack() {
+    navigation.navigate("EditarLivro");
   }
   return (
     <Container>
@@ -29,7 +31,7 @@ export default function Books() {
         status={status}
         notas={notas} />
 
-
+      <ButtonTextInicial title="Editar" onPress={handleEditarLivroStack} />
     </Container>
   );
 }

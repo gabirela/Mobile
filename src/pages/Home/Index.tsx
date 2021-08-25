@@ -2,7 +2,7 @@ import React from "react";
 import { FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/core";
 import { BooksProps } from "../../interfaces/Books.interfaces";
-import { Header, ButtonBooks, ButtonText } from "../../components";
+import { Header, ButtonBooks, ButtonTextInicial } from "../../components";
 import { Container, Message, Livros, Links } from "./styles";
 import data from "../../services/data";
 
@@ -14,6 +14,9 @@ export default function Home() {
     }
     function handlePerfilStack() {
         navigation.navigate("Perfil");
+    }
+    function handleCadastrarlivroStack() {
+        navigation.navigate("Cadastrarlivro");
     }
 
 
@@ -39,7 +42,8 @@ export default function Home() {
                     keyExtractor={item => String(item.id)}
                 />
             </Livros>
-            <ButtonText title="🙂Editar Perfil" onPress={handlePerfilStack} />
+            <ButtonTextInicial title="📖Editar Perfil" onPress={handlePerfilStack} />
+            <ButtonTextInicial title="📚Cadastrar livro" onPress={handleCadastrarlivroStack} />
         </Container>
     );
 }

@@ -4,11 +4,11 @@ import { BooksProps } from "../../interfaces/Books.interfaces";
 
 import {
   LivroStyle,
-  LivroTitle,
   LivroImage,
   LivroStatus,
   LivroName,
-  LivroNotas
+  LivroNotas,
+  Aviso
 } from "./styles";
 
 
@@ -19,8 +19,13 @@ export default function Livro({ title, image, status, notas: { conteudo } }: Boo
       <LivroImage>
         <Image source={image} />
       </LivroImage>
-      <LivroStatus>{status}</LivroStatus>
-      <LivroNotas>{conteudo}</LivroNotas>
+
+      <LivroStatus>
+        <Aviso>Status:  </Aviso>
+        {status}</LivroStatus>
+      <LivroNotas>
+        <Aviso>Notas:  </Aviso>
+        {conteudo}</LivroNotas>
     </LivroStyle>
   );
 }

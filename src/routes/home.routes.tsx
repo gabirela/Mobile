@@ -5,7 +5,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import BookStack from "./books.routes";
 import colors from "../styles/Colors";
-import { Perfil } from "../pages";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
