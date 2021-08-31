@@ -22,6 +22,7 @@ export const TextInput = styled.TextInput`
   margin-left: 5px;
   margin-bottom: 5px;
   width: 80%;
+  align-items: flex-start;
 
 `
 export const Label = styled.Text`
@@ -29,8 +30,3 @@ export const Label = styled.Text`
   color: ${colors.black};
   padding: 5px;
   `
-export const Borda = styled.View`
- background-color: ${colors.pinkBey};
- border-radius: 5px;
- width: 80%;
-`

@@ -11,5 +11,5 @@ export default {
   red: '#C82929',
   pink: '#AA0055',
   pinkLigth: '#D7B3C5',
-  pinkBey: '#E4DEE1'
+  pinkBey: '#D8D8D8'
 }
