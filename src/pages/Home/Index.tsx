@@ -5,7 +5,7 @@ import { BooksProps } from "../../interfaces/Books.interfaces";
 import { Header, ButtonBooks, ButtonTextInicial } from "../../components";
 import { Container, Message, Livros, Links } from "./styles";
 import data from "../../services/data";
-
+import { ScrollView } from "react-native-gesture-handler";
 
 export default function Home() {
     const navigation = useNavigation();
@@ -21,29 +21,31 @@ export default function Home() {
 
 
     return (
-        <Container>
-            <Header
-                hello='Olá,'
-                name='Gabriela'
-                image={require("../../../assets/img/FotoPerfil.png")}
-            />
-            <Message>Seus Livros:</Message>
-            <Livros>
-                <FlatList
-                    data={data}
-                    renderItem={({ item }) => (
-                        <ButtonBooks
-                            key={item.id}
-                            title={item.title}
-                            image={item.image}
-                            onPress={() => handleBooks(item)}
-                        />
-                    )}
-                    keyExtractor={item => String(item.id)}
+        <ScrollView>
+            <Container>
+                <Header
+                    hello='Olá,'
+                    name='Gabriela'
+                    image={require("../../../assets/img/FotoPerfil.png")}
                 />
-            </Livros>
-            <ButtonTextInicial title="📖Editar Perfil" onPress={handlePerfilStack} />
-            <ButtonTextInicial title="📚Cadastrar livro" onPress={handleCadastrarlivroStack} />
-        </Container>
+                <Message>Seus Livros:</Message>
+                <Livros>
+                    <FlatList
+                        data={data}
+                        renderItem={({ item }) => (
+                            <ButtonBooks
+                                key={item.id}
+                                title={item.title}
+                                image={item.image}
+                                onPress={() => handleBooks(item)}
+                            />
+                        )}
+                        keyExtractor={item => String(item.id)}
+                    />
+                </Livros>
+                <ButtonTextInicial title="📖Editar Perfil" onPress={handlePerfilStack} />
+                <ButtonTextInicial title="📚Cadastrar livro" onPress={handleCadastrarlivroStack} />
+            </Container>
+        </ScrollView>
     );
 }

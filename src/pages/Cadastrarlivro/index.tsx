@@ -2,7 +2,7 @@ import React from "react";
 import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/core";
 import { Container } from "./styles";
-import { ButtonTextInicial, Header, Salvar } from "../../components";
+import { ButtonText, ButtonTextInicial, Header, Salvar } from "../../components";
 import { Form, FormRow, TextInput, Label } from "./styles";
 import { ScrollViewComponent } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
@@ -14,6 +14,9 @@ export default function Cadastrarlivro() {
     const navigation = useNavigation();
     function handleHomeStack() {
         navigation.navigate("Home");
+    }
+    function handleFile() {
+        navigation.navigate("File");
     }
 
     return (
@@ -40,6 +43,9 @@ export default function Cadastrarlivro() {
                             placeholder='Notas'>
 
                         </TextInput>
+                    </FormRow>
+                    <FormRow>
+                        <ButtonText title=" Adicionar a foto" onPress={handleFile} />
                     </FormRow>
                 </Form>
                 <Salvar title="SALVAR" onPress={handleHomeStack} />

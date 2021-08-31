@@ -1,3 +1,4 @@
+
 export default [
   {
     id: 1,
@@ -14,12 +15,22 @@ export default [
     id: 2,
     title: "TOG- Herdeira do fogo",
     image: require("../../assets/img/TOG3.png"),
-    status: "Lendo",
+    status: "Lido",
     notas: {
       id: 1,
       conteudo: "Simplesmente maravilhoso. Neste livro Aelin Galthinyus aperfeiçoa seus poderes e se descobre herdeira do fogo de Mala, EM wendly ela conhece o principe Rowan e ambos seguem em busca das chaves de Wyrd."
     }
   },
+  {
+    id: 3,
+    title: "Torre do Alvorecer",
+    image: require("../../assets/img/TorreDoAlvorecer.png"),
+    status: "Lendo",
+    notas: {
+      id: 1,
+      conteudo: "Até o momento o livro está bem parado rs"
+    }
+  }
 ]
 /*PERGUNTAR PARA O LÁZARO,
 PORQUE NÃO CONSIGO ADCIONAR

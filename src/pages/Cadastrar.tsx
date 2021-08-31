@@ -15,12 +15,15 @@ export default function Cadastrar() {
   function handleLogin() {
     navigation.navigate("Login");
   }
+  function handleFile() {
+    navigation.navigate("File");
+  }
   return (
     <Container>
       <Form>
-      <Logo
-          image={require("../../assets/img/logoApp.png")} 
-          />
+        <Logo
+          image={require("../../assets/img/logoApp.png")}
+        />
         <FormRow>
           <Label>Nome</Label>
           <TextInput placeholder="nome"></TextInput>
@@ -34,7 +37,7 @@ export default function Cadastrar() {
           <TextInput placeholder="senha"></TextInput>
         </FormRow>
         <FormRow>
-          <Label>Foto de perfil</Label>
+          <ButtonText title="Adicione uma foto de perfil" onPress={handleFile} />
         </FormRow>
         <Button title="Salvar" onPress={handleLogin} />
         <ButtonText title="Voltar" onPress={handleLogin} />
@@ -42,8 +45,3 @@ export default function Cadastrar() {
     </Container>
   );
 }
-
-/*        <FormRow>
-          <Label>Foto de Perfil</Label>
-          <input type="image" placeholder="Selecione um arquivo .png"></input>
-        </FormRow>*/

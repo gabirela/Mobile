@@ -2,7 +2,7 @@ import React from "react";
 import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/core";
 import { Container, Form, FormRow, Label, TextInput } from "./styles";
-import { Header, ButtonTextInicial, Salvar } from "../../components";
+import { Header, ButtonTextInicial, Salvar, ButtonText } from "../../components";
 import { ScrollView } from "react-native-gesture-handler";
 
 
@@ -14,6 +14,9 @@ export default function EditarLivro() {
     }*/
     function handleBooksStack() {
         navigation.navigate("Books");
+    }
+    function handleFile() {
+        navigation.navigate("File");
     }
 
     return (
@@ -30,6 +33,9 @@ export default function EditarLivro() {
                     </FormRow>
                     <FormRow>
                         <TextInput placeholder='Editar status da leitura'></TextInput>
+                    </FormRow>
+                    <FormRow>
+                        <ButtonText title="Substituir a foto" onPress={handleFile} />
                     </FormRow>
                     <FormRow>
                         <Label>Editar suas notas:</Label>

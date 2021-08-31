@@ -11,9 +11,11 @@ export const ButtonStyleText = styled.Text`
   color: ${colors.black};
   font-weight: bold;
   text-align: center;
+  font-size: 15px;
   padding: 10px;
 `
 export const ImageStyle = styled.Image`
   align-items: center;
-  margin: 20px;
+  margin: 10px;
+  
 `

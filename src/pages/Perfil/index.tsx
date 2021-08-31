@@ -2,7 +2,7 @@ import React from "react";
 import { useRoute } from "@react-navigation/core";
 import { useNavigation } from "@react-navigation/core";
 import { Container, FormRow, Borda, TextInput, Form, Label } from "./styles";
-import { Header, Button, Salvar, ButtonTextInicial } from "../../components";
+import { Header, Button, Salvar, ButtonTextInicial, ButtonText } from "../../components";
 
 
 export default function Perfil() {
@@ -10,6 +10,9 @@ export default function Perfil() {
     const navigation = useNavigation();
     function handleHomeStack() {
         navigation.navigate("Home");
+    }
+    function handleFile() {
+        navigation.navigate("File");
     }
 
     return (
@@ -29,7 +32,7 @@ export default function Perfil() {
                     <TextInput></TextInput>
                 </FormRow>
                 <FormRow>
-                    <TextInput placeholder="Adicionar Foto"></TextInput>
+                    <ButtonText title="Substituir foto de perfil" onPress={handleFile} />
                 </FormRow>
             </Form>
             <Salvar title="SALVAR" onPress={handleHomeStack} />
