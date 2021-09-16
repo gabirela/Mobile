@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "projeto1",
-    "slug": "projeto1",
+    "name": "ReadingApp",
+    "slug": "readingapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,9 +17,13 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.cefetmg.ReadingApp",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.cefetmg.ReadingApp",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
