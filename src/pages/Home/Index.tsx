@@ -4,10 +4,12 @@ import { useNavigation } from "@react-navigation/core";
 import { BooksProps } from "../../interfaces/Books.interfaces";
 import { Header, ButtonBooks, ButtonTextInicial } from "../../components";
 import { Container, Message, Livros, Links } from "./styles";
-import data from "../../services/data";
+import data from "../../services/apagardata";
 import { ScrollView } from "react-native-gesture-handler";
+import { useAuth } from "../../hook/auth";
 
 export default function Home() {
+    const { user } = useAuth();
     const navigation = useNavigation();
     function handleBooks(item: BooksProps) {
         navigation.navigate("Books", { ...item });
@@ -23,11 +25,14 @@ export default function Home() {
     return (
         <ScrollView>
             <Container>
-                <Header
-                    hello='Olá,'
-                    name='Gabriela'
-                    image={require("../../../assets/img/FotoPerfil.png")}
-                />
+                {user && (
+                    <Header
+                        hello='Olá,'
+                        name={user.name}
+                        image={{ uri: user.profile_photo_url }}
+                    />
+                )}
+
                 <Message>Seus Livros:</Message>
                 <Livros>
                     <FlatList
@@ -49,4 +54,3 @@ export default function Home() {
         </ScrollView>
     );
 }
-/* alo */

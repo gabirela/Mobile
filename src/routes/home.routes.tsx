@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import BookStack from "./books.routes";
 import colors from "../styles/Colors";
+import Sair from "../pages/Sair";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -16,6 +17,7 @@ export default function HomeRoute() {
         activeBackgroundColor: colors.pink,
         inactiveBackgroundColor: colors.pink,
         activeTintColor: colors.white,
+        inactiveTintColor: colors.white
       }}
     >
       <Tab.Screen
@@ -25,6 +27,16 @@ export default function HomeRoute() {
           tabBarLabel: "Home",
           tabBarIcon: () => (
             <FontAwesome5 name="book" size={24} color={colors.white} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Sair"
+        component={Sair}
+        options={{
+          tabBarLabel: "Sair",
+          tabBarIcon: () => (
+            <FontAwesome5 name="sign-out-alt" size={24} color={colors.white} />
           ),
         }}
       />
